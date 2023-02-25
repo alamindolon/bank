@@ -38,18 +38,26 @@ document.getElementById('withdraw_btn').addEventListener('click',function()
     const withdrawtext = document.getElementById('withdraw_amount');
     const prewithdrawstring= withdrawtext.innerText;
     const prewithdrawAmount = parseFloat(prewithdrawstring);
+  
+   
+    
 
     const totalwithdraw = newWithdrawAmount + prewithdrawAmount;
 
     withdrawtext.innerText = totalwithdraw;
     withdrawFiled.value = '';
 
-   const balanceText = document.getElementById('fixbalace');
-   const balanceString = balanceText.innerText;
-   
-   const balanceNum = parseFloat(balanceString);
+    const balanceText = document.getElementById('fixbalace');
+    const balanceString = balanceText.innerText;
+    
+    const balanceNum = parseFloat(balanceString);
 
    const totalbalance = balanceNum - newWithdrawAmount;
    balanceText.innerText = totalbalance;
+   if(newWithdrawAmount>totalbalance)
+   {
+    alert('balance nai');
+   }
+ 
 
 })
