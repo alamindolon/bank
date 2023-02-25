@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank </title>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-0">Lets get <span class="font-semibold text-orange-400 ">Some Money</span>
+        </h1>
+    </header>
+   <main>
+    <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 mx-auto w-9/12 text-center text-white">
+            <div class="bg-orange-600 p-8 rounded-lg">
+                <h2 class="text-4xl">Deposite</h2>
+                <h4 id="text-xl" class="text-2xl">$ <span id="deposite_amount">000</span></h4>
+            </div>
+            <div class="bg-red-600 p-8 rounded-lg ">
+                <h2 class="text-4xl ">withdraw</h2>
+                <h4 id="text-5xl" class="text-2xl">$000</h4>
+            </div>
+            <div class="bg-green-600 p-8 rounded-lg">
+                <h2 class="text-4xl">Balance</h2>
+                <h4 id="text-2xl" class="text-2xl">$1200</h4>
+            </div>
+        </div>
+    </section>
+    <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 mx-auto w-9/12 text-center ">
+            <div class="bg-lime-500 p-8 rounded-lg">
+                <h2 class="text-4xl mb-4">Deposite Amount</h2>
+                <input type="text" class="px-4 w-6/12 rounded-t-lg text-center" name="" id="deposite_filed" placeholder="Enter your Password">
+                <br>
+                <button type="submit" id="deposite_btn" class="bg-green-400 px-4 py-2 mt-4 rounded-md text-white">Submit</button>
+                
+            </div>
+            
+            <div class="bg-amber-700 p-8 rounded-lg">
+                <h2 class="text-4xl mb-4">Withdraw Amount</h2>
+                <input type="text" class="px-4 w-6/12 rounded-t-lg text-center" name="" id="user_pass" placeholder="Enter your Password">
+                <br>
+                <button type="submit" id="submit_btn" class="bg-green-400 px-4 py-2 mt-4 rounded-md text-white">Submit</button>
+               
+            </div>
+        </div>
+    </section>
+   </main>
+   
+<script src="js/bank.js"></script>
+  
+</body>
+</html>
